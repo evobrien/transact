@@ -16,6 +16,7 @@ The UI has been split into 2 Fragments accessible from two tabs Search and Saved
  * The "Saved Fragment" listens for updates to the database and updates the data as soon as the number of saved database items changes.
  * The Saved Fragment can then give a clear picture of what has been successfully saved to the db
  * The Saved fragment can filter the saved images for an individual item by country code or country name
+ <img src="saved_screen.png?" width="360" height="700">
 
 ## Search Fragment
 * The Search Fragment allows the users to query the remote url https://www.countryflags.io/  for individual country flags. The flat flag style is the only one currently supported
@@ -24,6 +25,10 @@ The UI has been split into 2 Fragments accessible from two tabs Search and Saved
 * The Search fragment satifies the requirement: "As a user, if I enter an invalid or unavailable country code,  I should get an error dialog" by using a Toast alert as opposed to using a modal dialog.
 * Searching for a new item clears the list on the Search Fragment
 * Flag Images are saved to the local cache when querying for flags.
+<img src="search_screen.png?" width="360" height="700">
+
+## Demo Video
+![Link to App Video](project_demo.mp4)
 
  ## Database Design:
  * The database uses a simple two table design
@@ -53,8 +58,7 @@ The UI has been split into 2 Fragments accessible from two tabs Search and Saved
 * The UI design could so with some work as it does not look very pretty - it really is more of a testbed for the requirements.
 * Dimensions and styles have not been extracted to separate files. With more time, I would have cleanded that up.
 
-## Video
-![App Video](project_demo.mp4)
+
 
  
 
