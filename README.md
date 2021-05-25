@@ -53,6 +53,8 @@ The UI has been split into 2 Fragments accessible from two tabs Search and Saved
 * The UI design could so with some work as it does not look very pretty - it really is more of a testbed for the requirements.
 * Dimensions and styles have not been extracted to separate files. With more time, I would have cleanded that up.
 
+## Video
+![App Video](project_demo.mp4)
 
  
 
