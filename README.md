@@ -1,5 +1,5 @@
 # Transact Country Flag app
-## Design Decisons
+## Design Decisions
 * MVVM is used for managing the UI architecture
 * The Repository pattern is used for managing data and separating the data layer from the Application layer
 * Use case objects are used to mediate between the repository layer and the view layer
@@ -40,6 +40,7 @@ The UI has been split into 2 Fragments accessible from two tabs Search and Saved
 * Hilt is used for dependency injection. This is an opinionated wrapper around dagger that reduces the amount of boilerplate associated with setting up DI.
 * View binding is used in the app for binding to individual views. This eliminates the need for calls to findViewById
 * The Jetpack support for MVVM,LiveData,Kotlin Coroutines and Flow are used to support a relatively modern architecture
+* Kotlin coroutines and Flow are used instead of Rx as they are native platform implementations now and achieve parity with the most common Rx use cases
 * MockK is used to 
 
 
@@ -49,4 +50,9 @@ The UI has been split into 2 Fragments accessible from two tabs Search and Saved
 * Table Design. The Flag table does not include the country name field - This was done to basically demonstrate the limitations of Room and to show how one would map values in the Flag table via the country_code field. In retrospect this was not really necessary and is not particularly efficient
 * The mechanism on the SavedFragment to listen for updates is a bit hacky. It listens to LiveData backed by a Kotlin flow. The flow listens only for a change in the count of saved flags. A better implementation would have been to use that actual flow to update the data on the Saved Fragment in combination with a Flags table that included all necessary fields - that would have been more efficient and cut down on some code
 * The app only supports portrait mode currently (again due to time constraints) 
+* The UI design could so with some work as it does not look very pretty - it really is more of a testbed for the requirements.
+* Dimensions and styles have not been extracted to separate files. With more time, I would have cleanded that up.
+
+
+ 
 
