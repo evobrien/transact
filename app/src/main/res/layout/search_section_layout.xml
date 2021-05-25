@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:background="@color/white"
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_country">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+            android:background="@color/white"
+            android:id="@+id/edt_country_code"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_fetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fetch" />
+
+        <Button
+            android:id="@+id/btn_show_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_all"
+            android:layout_toRightOf="@id/btn_fetch"
+            android:layout_toEndOf="@id/btn_fetch"
+            android:visibility="gone"
+            android:layout_marginLeft="4dp" />
+    </RelativeLayout>
+</LinearLayout>

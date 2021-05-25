@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <include
+        android:id="@+id/search_section"
+        layout="@layout/search_section_layout" />
+
+    <LinearLayout
+        android:id="@+id/results_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_result_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/results"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_no_saved_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_results_available"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:textSize="22sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/saved_image_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

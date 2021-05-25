@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Country Flags</string>
+    <string name="enter_country">Enter Country</string>
+    <string name="fetch">Fetch</string>
+    <string name="show_all">Show All</string>
+    <string name="no_results_available">No Results available</string>
+    <string name="save">Save</string>
+    <string name="err_validate_country_code">Please enter a valid 2 character code</string>
+    <string name="filter_country">Filter</string>
+    <string name="enter_country_name">Enter country name 2 digit code</string>
+    <string name="results">Results:</string>
+    <string name="err_not_exceed_count">Search term must exceed %1$s characters.</string>
+</resources>
