@@ -54,7 +54,7 @@ The UI has been split into 2 Fragments accessible from two tabs Search and Saved
 * Dimensions and styles have not been extracted to separate files. With more time, I would have cleanded that up.
 
 ## Video
-![](project_demo.mp4)
+![App Video](project_demo.mp4)
 
  
 
